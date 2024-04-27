@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Math Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="CSS/utils.css" type="text/css" />
+</head>
+<body>
+    <h1 class="text">Simple Math Calculator</h1>
+    <div class="container flex flex-col items-center mx-auto m-w-20">
+        <div class="row">
+            <input class="input" id="input" type="text" onclick="" />
+        </div>
+
+        <div class="row">
+            <button class="button" onclick="clearEntry()">CE</button>
+            <button class="button" onclick="appendInput('%')">%</button>
+            <button class="button delete-btn" onclick="allClear()">AC</button>
+            <button class="button" onclick="appendInput('/')">/</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendInput('7')">7</button>
+            <button class="button" onclick="appendInput('8')">8</button>
+            <button class="button" onclick="appendInput('9')">9</button>
+            <button class="button" onclick="appendInput('*')">*</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendInput('4')">4</button>
+            <button class="button" onclick="appendInput('5')">5</button>
+            <button class="button" onclick="appendInput('6')">6</button>
+            <button class="button" onclick="appendInput('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendInput('1')">1</button>
+            <button class="button" onclick="appendInput('2')">2</button>
+            <button class="button" onclick="appendInput('3')">3</button>
+            <button class="button" onclick="appendInput('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button" onclick="appendInput('00')">00</button>
+            <button class="button" onclick="appendInput('0')">0</button>
+            <button class="button" onclick="appendInput('.')">.</button>
+            <button class="button" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
